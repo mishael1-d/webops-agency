@@ -37,7 +37,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       primary: "bg-black text-white hover:bg-zinc-800",
       secondary: "bg-zinc-100 text-zinc-900 hover:bg-zinc-200",
       outline:
-        "border border-zinc-200 bg-transparent hover:bg-zinc-50 text-zinc-900",
+        "border border-zinc-200 bg-zinc-100 hover:bg-zinc-50 text-zinc-900",
       ghost: "bg-transparent hover:bg-zinc-100 text-zinc-900",
     };
 

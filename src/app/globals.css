@@ -1,6 +1,41 @@
 @import "tailwindcss";
 
-
-@theme inline {
+@theme {
+  --color-primary: #7c2dcb;
 }
 
+.grid-background {
+  background-image: url("/images/grid2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.faded-marquee-container {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
