@@ -4,12 +4,12 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-    <section className="relative py-[100px] overflow-hidden h-screen">
+    <section className="relative pt-[100px] overflow-hidden h-full">
       {/* Perspective Grid Background */}
       <div
-        className="absolute left-0 right-0 bottom-[350px] h-full w-full pointer-events-none opacity-20"
+        className="absolute left-0 right-0 bottom-[0px] h-full w-full pointer-events-none opacity-20"
         style={{
-          transform: "perspective(5000px) rotateX(50deg) translateY(35%)",
+          transform: "perspective(5000px) rotateX(5deg) translateY(5%)",
           transformOrigin: "bottom center",
           zIndex: 1,
         }}
@@ -55,7 +55,7 @@ function HeroSection() {
       </div>
 
       {/* Partners and Brands */}
-      <div className="relative z-[20] mt-[120px] max-w-[1200px] mx-auto overflow-hidden faded-marquee-container">
+      <div className="relative z-[20] mt-[80px] mb-[50px] max-w-[1200px] mx-auto overflow-hidden faded-marquee-container">
         <div className="flex w-fit items-center gap-x-[60px] animate-marquee whitespace-nowrap">
           {[
             { name: "Gallery Artisan", icon: "G" },

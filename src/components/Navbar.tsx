@@ -4,7 +4,7 @@ import { Button } from "./ui/Button";
 
 function Navbar() {
   return (
-    <div className="sticky top-0 py-[10px] px-[40px] flex justify-between items-center border-b border-slate-100">
+    <div className="z-[100] bg-white sticky top-0 py-[10px] px-[40px] flex justify-between items-center border-b border-slate-100">
       {/* Logo */}
       <div className="w-[143px] h-[59px]">
         <Image
