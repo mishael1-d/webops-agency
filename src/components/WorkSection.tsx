@@ -61,7 +61,7 @@ function WorkSection() {
             </div>
             <div className="min-h-[300px] lg:min-h-auto">
               <Image
-                src={"/images/Image.png"}
+                src={"/images/Image.webp"}
                 alt=""
                 width={440}
                 height={348}
@@ -153,7 +153,7 @@ function WorkSection() {
             </div>
             <div className="min-h-[300px] lg:min-h-auto">
               <Image
-                src={"/images/Image2.png"}
+                src={"/images/Image2.webp"}
                 alt=""
                 width={440}
                 height={348}

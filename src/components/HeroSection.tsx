@@ -123,7 +123,7 @@ function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-[36%] min-h-[300px] lg:min-h-auto bg-dark rounded-[16px] bg-[url('/images/hero-img.png')] bg-cover bg-center bg-no-repeat relative overflow-hidden">
+        <div className="w-full lg:w-[36%] min-h-[300px] lg:min-h-auto bg-dark rounded-[16px] bg-[url('/images/hero-img.webp')] bg-cover bg-center bg-no-repeat relative overflow-hidden">
           <div className="absolute bg-black -top-[20px] -right-[20px] w-[120px] h-[120px] rounded-full flex items-center justify-center">
             <svg
               viewBox="0 0 200 100"
