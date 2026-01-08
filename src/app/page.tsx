@@ -1,16 +1,25 @@
 import AboutSection from "@/components/AboutSection";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
-import { Button } from "@/components/ui/Button";
+import QuestionSection from "@/components/QuestionSection";
+import ServicesSection from "@/components/ServicesSection";
+import TestimonialSection from "@/components/TestimonialSection";
+import WorkSection from "@/components/WorkSection";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="">
       <Navbar />
       <main>
-        <HeroSection/>
-        <AboutSection/>
+        <HeroSection />
+        <AboutSection />
+        <ServicesSection />
+        <WorkSection />
+        <TestimonialSection />
+        <QuestionSection />
       </main>
+      <Footer />
     </div>
   );
 }
