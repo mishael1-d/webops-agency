@@ -6,8 +6,8 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 function HeroSection() {
   return (
     <section className="">
-      <div className="flex gap-[16px]">
-        <div className="w-[64%] bg-dark !p-[16px] !pt-[80px] rounded-[16px] relative overflow-hidden">
+      <div className="flex flex-col lg:flex-row gap-[16px]">
+        <div className="w-full lg:w-[64%] bg-dark !p-[16px] !pt-[80px] rounded-[16px] relative overflow-hidden">
           {/* Video Background */}
           <video
             autoPlay
@@ -23,44 +23,43 @@ function HeroSection() {
           <div className="absolute inset-0 bg-black/90 rounded-[16px]" />
 
           {/* Content */}
-          <div className="max-w-[772px] !mx-auto relative z-10">
-            <div className="flex items-center gap-[18px]">
-              <h1 className="font-semibold text-[48px] uppercase text-white">
-                Building Softwares{" "}
-              </h1>
-              <div className="flex items-center gap-[9px] relative">
-                <svg
-                  viewBox="0 0 200 100"
-                  className=" absolute -left-[20px] w-[56px] h-[56px] -rotate-[90deg]"
-                >
-                  <path
-                    d="M10 90 A90 90 0 0 1 190 90"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={6}
-                    className="text-primary"
-                  />
-                </svg>
-
-                <div className="bg-primary w-[40px] h-[40px] rounded-full flex items-center justify-center">
-                  <ArrowRight />
-                </div>
-                <p className="text-primary uppercase text-[20px] font-medium">
-                  start a project
-                </p>
-              </div>
-            </div>
-            <h2 className="font-semibold text-[48px] uppercase text-white !mb-[20px]">
-              That Drives Growth
+          <div className="max-w-[772px] !mx-auto relative z-10 flex flex-col items-start text-left">
+            <h1 className="font-semibold text-[32px] md:text-[48px] uppercase text-white mb-2 leading-tight">
+              Digital Solutions
+            </h1>
+            <h2 className="font-semibold text-[32px] md:text-[48px] uppercase text-white !mb-[30px] leading-tight">
+              That Drive Success
             </h2>
-            <p className="max-w-[692px] text-grey">
-              From small businesses launching their first systems to corporate
-              teams modernizing complex platforms — WebOps Software Solutions
-              designs and delivers scalable software that drives real business
-              results.
+
+            <div className="flex items-center gap-[9px] relative mb-[30px]">
+              <svg
+                viewBox="0 0 200 100"
+                className=" absolute -left-[20px] w-[56px] h-[56px] -rotate-[90deg]"
+              >
+                <path
+                  d="M10 90 A90 90 0 0 1 190 90"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={6}
+                  className="text-primary"
+                />
+              </svg>
+
+              <div className="bg-primary w-[40px] h-[40px] rounded-full flex items-center justify-center">
+                <ArrowRight />
+              </div>
+              <p className="text-primary uppercase text-[20px] font-medium">
+                start a project
+              </p>
+            </div>
+
+            <p className="max-w-[692px] text-grey text-[16px]">
+              At WebOps, we believe in the transformative power of digital
+              solutions. Our team of experts is dedicated to helping businesses
+              like yours thrive in the fast-paced digital landscape.
             </p>
           </div>
-          <div className="bg-custom-black !py-[16px] !mt-[78px] rounded-[10px] overflow-hidden relative">
+          <div className="bg-custom-black !py-[16px] !mt-[40px] rounded-[10px] overflow-hidden relative">
             <div className="flex items-center gap-[10px] animate-scroll">
               {/* First set of items */}
               <div className="flex items-center gap-[10px] shrink-0">
@@ -124,7 +123,7 @@ function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="w-[36%] bg-dark rounded-[16px] bg-[url('/images/hero-img.png')] bg-cover bg-center bg-no-repeat relative overflow-hidden">
+        <div className="w-full lg:w-[36%] min-h-[300px] lg:min-h-auto bg-dark rounded-[16px] bg-[url('/images/hero-img.png')] bg-cover bg-center bg-no-repeat relative overflow-hidden">
           <div className="absolute bg-black -top-[20px] -right-[20px] w-[120px] h-[120px] rounded-full flex items-center justify-center">
             <svg
               viewBox="0 0 200 100"
@@ -150,7 +149,7 @@ function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="border border-[#1F1F1F] !mt-[16px] !p-[10px] rounded-[16px] grid grid-cols-6 gap-[10px]">
+      <div className="border border-[#1F1F1F] !mt-[16px] !p-[10px] rounded-[16px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-[10px]">
         <div className="h-[101px] flex flex-col items-center justify-center bg-dark rounded-[10px]">
           <p className="font-roboto-mono uppercase text-white text-[14px] font-medium leading-tight">
             clients
@@ -183,7 +182,7 @@ function HeroSection() {
             100k
           </p>
         </div>
-        <div className="h-[101px] flex flex-col items-center justify-center bg-dark rounded-[10px]">
+        <div className="h-[101px] flex flex-col items-center justify-center bg-dark rounded-[10px] col-span-2 md:col-span-1">
           <p className="font-roboto-mono uppercase text-white text-[14px] font-medium leading-tight">
             Years of experience
           </p>
@@ -191,11 +190,13 @@ function HeroSection() {
             10+
           </p>
         </div>
-        <div className="h-[101px] flex items-center justify-center bg-dark rounded-[10px] gap-[16px]">
+        <div className="h-[101px] flex items-center justify-center bg-dark rounded-[10px] gap-[16px] col-span-2 md:col-span-1">
           <div className="w-[48px] h-[48px] rounded-full bg-custom-black border border-[#1F1F1F] flex items-center justify-center">
             <ArrowUpRight className="text-primary" />
           </div>
-          <p className="font-roboto-mono uppercase text-grey text-[16px] font-medium leading-tight">know more</p>
+          <p className="font-roboto-mono uppercase text-grey text-[16px] font-medium leading-tight">
+            know more
+          </p>
         </div>
       </div>
     </section>

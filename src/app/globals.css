@@ -16,6 +16,12 @@ body {
   background-color: var(--color-custom-black);
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+}
+
 /* Custom font utilities */
 .font-roboto-flex {
   font-family: var(--font-roboto-flex), system-ui, sans-serif;

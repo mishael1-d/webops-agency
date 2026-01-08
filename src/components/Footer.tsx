@@ -11,7 +11,7 @@ function Footer() {
   return (
     <footer className="w-full flex flex-col gap-6 mt-20 font-roboto-flex text-white">
       {/* CTA Section */}
-      <div className="w-full bg-primary rounded-[16px] p-8 md:p-[60px] flex flex items-center justify-between relative overflow-hidden">
+      <div className="w-full bg-primary rounded-[16px] p-8 md:p-[60px] flex flex-col md:flex-row items-start md:items-center justify-between relative overflow-hidden gap-6">
         <div className="max-w-[917px] z-10">
           <h2 className="text-3xl md:text-[38px] font-medium mb-4 uppercase">
             Ready to transform your digital presence?
@@ -22,7 +22,7 @@ function Footer() {
             drive growth for your business.
           </p>
         </div>
-        <button className="bg-black text-white px-6 py-3 rounded-xl flex items-center gap-2 text-sm font-medium hover:bg-opacity-80 transition-all uppercase">
+        <button className="bg-black text-white px-6 py-3 rounded-xl flex items-center gap-2 text-sm font-medium hover:bg-opacity-80 transition-all uppercase w-full md:w-auto justify-center">
           Get in touch <MoveUpRight size={16} />
         </button>
       </div>
@@ -54,7 +54,7 @@ function Footer() {
               <div className="w-12 h-12 bg-[#252525] rounded-xl flex items-center justify-center text-primary">
                 <Instagram size={24} />
               </div>
-              <div className="w-10 h-10 border border-[#333] rounded-full flex items-center justify-center text-grey group-hover:bg-[#D97757] group-hover:text-white group-hover:border-[#D97757] transition-all">
+              <div className="w-10 h-10 border border-[#333] rounded-full flex items-center justify-center text-grey group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all">
                 <MoveUpRight size={18} />
               </div>
             </div>
@@ -72,7 +72,7 @@ function Footer() {
               <div className="w-12 h-12 bg-[#252525] rounded-xl flex items-center justify-center text-primary">
                 <Twitter size={24} />
               </div>
-              <div className="w-10 h-10 border border-[#333] rounded-full flex items-center justify-center text-grey group-hover:bg-[#D97757] group-hover:text-white group-hover:border-[#D97757] transition-all">
+              <div className="w-10 h-10 border border-[#333] rounded-full flex items-center justify-center text-grey group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all">
                 <MoveUpRight size={18} />
               </div>
             </div>
@@ -90,7 +90,7 @@ function Footer() {
               <div className="w-12 h-12 bg-[#252525] rounded-xl flex items-center justify-center text-primary">
                 <Dribbble size={24} />
               </div>
-              <div className="w-10 h-10 border border-[#333] rounded-full flex items-center justify-center text-grey group-hover:bg-[#D97757] group-hover:text-white group-hover:border-[#D97757] transition-all">
+              <div className="w-10 h-10 border border-[#333] rounded-full flex items-center justify-center text-grey group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all">
                 <MoveUpRight size={18} />
               </div>
             </div>
@@ -108,7 +108,7 @@ function Footer() {
               <div className="w-12 h-12 bg-[#252525] rounded-xl flex items-center justify-center text-primary font-bold text-xl">
                 Be
               </div>
-              <div className="w-10 h-10 border border-[#333] rounded-full flex items-center justify-center text-grey group-hover:bg-[#D97757] group-hover:text-white group-hover:border-[#D97757] transition-all">
+              <div className="w-10 h-10 border border-[#333] rounded-full flex items-center justify-center text-grey group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all">
                 <MoveUpRight size={18} />
               </div>
             </div>

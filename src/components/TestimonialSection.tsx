@@ -5,8 +5,8 @@ function TestimonialSection() {
   return (
     <section className="mt-[80px]">
       <div className="border border-[#1F1F1F] !p-[10px] rounded-[16px]">
-        <div className="bg-dark rounded-[10px] p-[40px] flex items-center justify-between mb-[10px]">
-          <h2 className="uppercase text-[35px] font-semibold text-white tracking-tight">
+        <div className="bg-dark rounded-[10px] p-[20px] md:p-[40px] flex flex-col md:flex-row items-center justify-between mb-[10px] gap-4">
+          <h2 className="uppercase text-[24px] md:text-[35px] font-semibold text-white tracking-tight">
             Testimonials
           </h2>
           <div className="flex items-center gap-[10px]">
@@ -18,9 +18,9 @@ function TestimonialSection() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-4 !mt-[10px] gap-[10px]">
-          <div className="bg-dark rounded-[10px] h-[357px] text-white relative">
-            <div className="p-[30px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 !mt-[10px] gap-[10px]">
+          <div className="bg-dark rounded-[10px] min-h-[357px] text-white flex flex-col">
+            <div className="p-[30px] flex-grow">
               <h3 className="uppercase text-[22px] font-medium tracking-tight mb-[20px]">
                 WebOps turned our business around!
               </h3>
@@ -30,7 +30,7 @@ function TestimonialSection() {
                 recommended!
               </p>
             </div>
-            <div className="absolute bottom-0 left-0 right-0 px-[30px] py-[20px] bg-[#1F1F1F] rounded-b-[16px] flex items-center">
+            <div className="px-[30px] py-[20px] bg-[#1F1F1F] rounded-b-[10px] flex items-center mt-auto">
               <div className="w-[45px] h-[45px] rounded-full bg-primary text-white flex items-center justify-center mr-[10px]">
                 ST
               </div>
@@ -39,12 +39,12 @@ function TestimonialSection() {
                 <p className="text-[#B3B3B2]">Art Director</p>
               </div>
               <div className="w-[40px] h-[40px] rounded-full text-white flex items-center justify-center ml-[20px] border border-[#333333]">
-                <ArrowRight strokeWidth={1} className="text-primary"/>
+                <ArrowRight strokeWidth={1} className="text-primary" />
               </div>
             </div>
           </div>
-          <div className="bg-dark rounded-[10px] h-[357px] text-white relative">
-            <div className="p-[30px]">
+          <div className="bg-dark rounded-[10px] min-h-[357px] text-white flex flex-col">
+            <div className="p-[30px] flex-grow">
               <h3 className="uppercase text-[22px] font-medium tracking-tight mb-[20px]">
                 Working with WebOps was a pleasure
               </h3>
@@ -54,7 +54,7 @@ function TestimonialSection() {
                 recommended!
               </p>
             </div>
-            <div className="absolute bottom-0 left-0 right-0 px-[30px] py-[20px] bg-[#1F1F1F] rounded-b-[16px] flex items-center">
+            <div className="px-[30px] py-[20px] bg-[#1F1F1F] rounded-b-[10px] flex items-center mt-auto">
               <div className="w-[45px] h-[45px] rounded-full bg-primary text-white flex items-center justify-center mr-[10px]">
                 ST
               </div>
@@ -63,12 +63,12 @@ function TestimonialSection() {
                 <p className="text-[#B3B3B2]">CEO of HealthTech</p>
               </div>
               <div className="w-[40px] h-[40px] rounded-full text-white flex items-center justify-center ml-[20px] border border-[#333333]">
-                <ArrowRight strokeWidth={1} className="text-primary"/>
+                <ArrowRight strokeWidth={1} className="text-primary" />
               </div>
             </div>
           </div>
-          <div className="bg-dark rounded-[10px] h-[357px] text-white relative">
-            <div className="p-[30px]">
+          <div className="bg-dark rounded-[10px] min-h-[357px] text-white flex flex-col">
+            <div className="p-[30px] flex-grow">
               <h3 className="uppercase text-[22px] font-medium tracking-tight mb-[20px]">
                 webops's web design brought our vision
               </h3>
@@ -78,7 +78,7 @@ function TestimonialSection() {
                 recommended!
               </p>
             </div>
-            <div className="absolute bottom-0 left-0 right-0 px-[30px] py-[20px] bg-[#1F1F1F] rounded-b-[16px] flex items-center">
+            <div className="px-[30px] py-[20px] bg-[#1F1F1F] rounded-b-[10px] flex items-center mt-auto">
               <div className="w-[45px] h-[45px] rounded-full bg-primary text-white flex items-center justify-center mr-[10px]">
                 ST
               </div>
@@ -87,12 +87,12 @@ function TestimonialSection() {
                 <p className="text-[#B3B3B2]">COO of Foddie Haven</p>
               </div>
               <div className="w-[40px] h-[40px] rounded-full text-white flex items-center justify-center ml-[20px] border border-[#333333]">
-                <ArrowRight strokeWidth={1} className="text-primary"/>
+                <ArrowRight strokeWidth={1} className="text-primary" />
               </div>
             </div>
           </div>
-          <div className="bg-dark rounded-[10px] h-[357px] text-white relative">
-            <div className="p-[30px]">
+          <div className="bg-dark rounded-[10px] min-h-[357px] text-white flex flex-col">
+            <div className="p-[30px] flex-grow">
               <h3 className="uppercase text-[22px] font-medium tracking-tight mb-[20px]">
                 webops turned our business around!
               </h3>
@@ -102,7 +102,7 @@ function TestimonialSection() {
                 recommended!
               </p>
             </div>
-            <div className="absolute bottom-0 left-0 right-0 px-[30px] py-[20px] bg-[#1F1F1F] rounded-b-[16px] flex items-center">
+            <div className="px-[30px] py-[20px] bg-[#1F1F1F] rounded-b-[10px] flex items-center mt-auto">
               <div className="w-[45px] h-[45px] rounded-full bg-primary text-white flex items-center justify-center mr-[10px]">
                 ST
               </div>
@@ -111,7 +111,7 @@ function TestimonialSection() {
                 <p className="text-[#B3B3B2]">CEO of BlueBloom</p>
               </div>
               <div className="w-[40px] h-[40px] rounded-full text-white flex items-center justify-center ml-[20px] border border-[#333333]">
-                <ArrowRight strokeWidth={1} className="text-primary"/>
+                <ArrowRight strokeWidth={1} className="text-primary" />
               </div>
             </div>
           </div>

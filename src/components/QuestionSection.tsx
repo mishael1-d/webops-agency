@@ -40,8 +40,8 @@ function QuestionSection() {
 
   return (
     <section className="mt-[80px]">
-      <div className="bg-dark rounded-[10px] p-[40px] flex items-center justify-between mb-[10px]">
-        <h2 className="uppercase text-[35px] font-semibold text-white tracking-tight">
+      <div className="bg-dark rounded-[10px] p-[20px] md:p-[40px] flex flex-col md:flex-row items-center justify-between mb-[10px] gap-4">
+        <h2 className="uppercase text-[24px] md:text-[35px] font-semibold text-white tracking-tight text-center md:text-left">
           Frequently Asked Questions
         </h2>
         <div className="flex items-center gap-[10px]">
@@ -53,24 +53,24 @@ function QuestionSection() {
           </p>
         </div>
       </div>
-      <div className="flex gap-[10px] items-start">
+      <div className="flex flex-col lg:flex-row gap-[10px] items-start">
         {/* Left Column: FAQ Accordion */}
-        <div className="w-[60%] flex flex-col gap-[10px]">
+        <div className="w-full lg:w-[60%] flex flex-col gap-[10px]">
           {faqData.map((item, index) => {
             const isOpen = openIndex === index;
             return (
               <div
                 key={index}
                 onClick={() => toggleAccordion(index)}
-                className={`bg-dark rounded-[10px] p-[30px] cursor-pointer transition-all duration-300 ${
+                className={`bg-dark rounded-[10px] p-[20px] md:p-[30px] cursor-pointer transition-all duration-300 ${
                   isOpen ? "min-h-[180px]" : "h-[100px] flex items-center"
                 }`}
               >
                 <div className="flex justify-between items-start w-full">
-                  <h3 className="text-white text-[18px] font-medium leading-snug max-w-[85%]">
+                  <h3 className="text-white text-[16px] md:text-[18px] font-medium leading-snug max-w-[85%]">
                     {item.question}
                   </h3>
-                  <button className="w-[38px] h-[38px] rounded-full bg-[#262626] flex items-center justify-center transition-colors hover:bg-[#333]">
+                  <button className="w-[38px] h-[38px] shrink-0 rounded-full bg-[#262626] flex items-center justify-center transition-colors hover:bg-[#333]">
                     {isOpen ? (
                       <Minus className="text-gray-400 w-5 h-5" />
                     ) : (
@@ -80,7 +80,7 @@ function QuestionSection() {
                 </div>
                 {isOpen && (
                   <div className="mt-6 border-t border-[#262626] pt-6 animate-fadeIn">
-                    <p className="text-gray-400 text-[15px] leading-relaxed">
+                    <p className="text-gray-400 text-[14px] md:text-[15px] leading-relaxed">
                       {item.answer}
                     </p>
                   </div>
@@ -91,7 +91,7 @@ function QuestionSection() {
         </div>
 
         {/* Right Column: Contact Form */}
-        <div className="w-[40%] bg-dark rounded-[10px] p-[40px] h-[640px] flex flex-col">
+        <div className="w-full lg:w-[40%] bg-dark rounded-[10px] p-[20px] md:p-[40px] h-auto md:min-h-[640px] flex flex-col">
           <h3 className="text-white text-[20px] uppercase font-medium mb-[35px]">
             Ask Your Question
           </h3>
@@ -127,7 +127,7 @@ function QuestionSection() {
             </div>
             <button
               type="submit"
-              className="mt-[5px] w-full h-[55px] bg-primary text-black uppercase font-bold text-[14px] tracking-tight rounded-[8px] hover:bg-[#c57a63] transition-colors"
+              className="mt-[5px] w-full h-[55px] bg-primary text-black uppercase font-bold text-[14px] tracking-tight rounded-[8px] hover:bg-primary/50 transition-colors"
             >
               Send Your Message
             </button>

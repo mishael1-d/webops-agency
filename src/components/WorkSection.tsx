@@ -6,8 +6,8 @@ function WorkSection() {
   return (
     <section className="mt-[80px]">
       <div>
-        <div className="bg-dark rounded-[10px] p-[40px] flex items-center justify-between mb-[10px]">
-          <h2 className="uppercase text-[35px] font-semibold text-white tracking-tight">
+        <div className="bg-dark rounded-[10px] p-[20px] md:p-[40px] flex flex-col md:flex-row items-center justify-between mb-[10px] gap-4">
+          <h2 className="uppercase text-[24px] md:text-[35px] font-semibold text-white tracking-tight text-center md:text-left">
             Our works
           </h2>
           <div className="flex items-center gap-[10px]">
@@ -20,9 +20,9 @@ function WorkSection() {
           </div>
         </div>
         <div className="space-y-[10px]">
-          <div className="border border-[#1F1F1F] !p-[10px] rounded-[16px] grid grid-cols-3 gap-[10px]">
-            <div className="bg-dark rounded-[10px] py-[50px] px-[30px] h-[348px] text-white">
-              <div className="flex items-center justify-between">
+          <div className="border border-[#1F1F1F] !p-[10px] rounded-[16px] grid grid-cols-1 lg:grid-cols-3 gap-[10px]">
+            <div className="bg-dark rounded-[10px] py-[30px] md:py-[50px] px-[20px] md:px-[30px] min-h-[348px] text-white">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                 <div className="flex items-center gap-[6px]">
                   <div className="w-[56px] h-[56px] rounded-[10px] border border-[#1F1F1F] bg-[#1f1f1f] flex items-center justify-center">
                     <Star className="text-primary" />
@@ -40,7 +40,7 @@ function WorkSection() {
                   </p>
                 </div>
               </div>
-              <div className="my-[30px]">
+              <div className="my-[30px] flex flex-wrap gap-2">
                 <div className="flex items-center gap-[10px] text-[14px] text-grey bg-[#1F1F1F] py-[8px] px-[14px] rounded-[45px] w-fit">
                   <p>Category</p>
                   <div className="w-[5px] h-[5px] bg-primary rounded-full" />
@@ -48,7 +48,7 @@ function WorkSection() {
                     Mobile App Development
                   </p>
                 </div>
-                <div className="flex items-center gap-[10px] text-[14px] text-grey bg-[#1F1F1F] py-[8px] px-[14px] rounded-[45px] mt-[10px] w-fit">
+                <div className="flex items-center gap-[10px] text-[14px] text-grey bg-[#1F1F1F] py-[8px] px-[14px] rounded-[45px] w-fit">
                   <p>Time Taken</p>
                   <div className="w-[5px] h-[5px] bg-primary rounded-full" />
                   <p className="text-white font-medium">6 months</p>
@@ -59,7 +59,7 @@ function WorkSection() {
                 fitness plans, nutrition guidance
               </p>
             </div>
-            <div>
+            <div className="min-h-[300px] lg:min-h-auto">
               <Image
                 src={"/images/Image.png"}
                 alt=""
@@ -69,11 +69,11 @@ function WorkSection() {
               />
             </div>
             <div className="">
-              <div className="bg-dark rounded-[10px] p-[30px] h-[182px] mb-[10px]">
+              <div className="bg-dark rounded-[10px] p-[30px] min-h-[182px] mb-[10px]">
                 <h3 className="uppercase text-white font-medium tracking-tight mb-[16px]">
                   technologies used
                 </h3>
-                <div className="flex gap-[16px] flex-wrap">
+                <div className="flex gap-[10px] md:gap-[16px] flex-wrap">
                   <div className="font-roboto-mono flex items-center gap-[10px] text-[14px] text-white bg-[#1F1F1F] py-[8px] px-[14px] rounded-[45px] w-fit">
                     React Native
                   </div>
@@ -112,9 +112,9 @@ function WorkSection() {
               </button>
             </div>
           </div>
-          <div className="border border-[#1F1F1F] !p-[10px] rounded-[16px] grid grid-cols-3 gap-[10px]">
-            <div className="bg-dark rounded-[10px] py-[50px] px-[30px] h-[348px] text-white">
-              <div className="flex items-center justify-between">
+          <div className="border border-[#1F1F1F] !p-[10px] rounded-[16px] grid grid-cols-1 lg:grid-cols-3 gap-[10px]">
+            <div className="bg-dark rounded-[10px] py-[30px] md:py-[50px] px-[20px] md:px-[30px] min-h-[348px] text-white">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                 <div className="flex items-center gap-[6px]">
                   <div className="w-[56px] h-[56px] rounded-[10px] border border-[#1F1F1F] bg-[#1f1f1f] flex items-center justify-center">
                     <Store className="text-primary" />
@@ -132,7 +132,7 @@ function WorkSection() {
                   </p>
                 </div>
               </div>
-              <div className="my-[30px]">
+              <div className="my-[30px] flex flex-wrap gap-2">
                 <div className="flex items-center gap-[10px] text-[14px] text-grey bg-[#1F1F1F] py-[8px] px-[14px] rounded-[45px] w-fit">
                   <p>Category</p>
                   <div className="w-[5px] h-[5px] bg-primary rounded-full" />
@@ -140,17 +140,18 @@ function WorkSection() {
                     Web Design & Development
                   </p>
                 </div>
-                <div className="flex items-center gap-[10px] text-[14px] text-grey bg-[#1F1F1F] py-[8px] px-[14px] rounded-[45px] mt-[10px] w-fit">
+                <div className="flex items-center gap-[10px] text-[14px] text-grey bg-[#1F1F1F] py-[8px] px-[14px] rounded-[45px] w-fit">
                   <p>Time Taken</p>
                   <div className="w-[5px] h-[5px] bg-primary rounded-full" />
                   <p className="text-white font-medium">3 months</p>
                 </div>
               </div>
               <p>
-                A complete overhaul of a corporate website to enhance its brand identity and user experience.
+                A complete overhaul of a corporate website to enhance its brand
+                identity and user experience.
               </p>
             </div>
-            <div>
+            <div className="min-h-[300px] lg:min-h-auto">
               <Image
                 src={"/images/Image2.png"}
                 alt=""
@@ -160,11 +161,11 @@ function WorkSection() {
               />
             </div>
             <div className="">
-              <div className="bg-dark rounded-[10px] p-[30px] h-[182px] mb-[10px]">
+              <div className="bg-dark rounded-[10px] p-[30px] min-h-[182px] mb-[10px]">
                 <h3 className="uppercase text-white font-medium tracking-tight mb-[16px]">
                   technologies used
                 </h3>
-                <div className="flex gap-[16px] flex-wrap">
+                <div className="flex gap-[10px] md:gap-[16px] flex-wrap">
                   <div className="font-roboto-mono flex items-center gap-[10px] text-[14px] text-white bg-[#1F1F1F] py-[8px] px-[14px] rounded-[45px] w-fit">
                     Figma
                   </div>
